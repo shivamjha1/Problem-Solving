@@ -11,10 +11,13 @@ void main()
     for(i=0,k=n-1;i<n,k>=0;i++,k--)
         for(j=0;j<n;j++)
         b[j][k]=a[i][j];
+    for(i=0,k=n-1;i<n,k>=0;i++,k--)
+        for(j=0;j<n;j++)
+        a[j][k]=b[i][j];
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
-        printf("%d ",b[i][j]);
+        printf("%d ",a[i][j]);
         printf("\n");
     }
 
